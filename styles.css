@@ -16,16 +16,22 @@ body {
 }
 
 nav ul{
-    float: right;
-    margin-right: 340px;
+    float: inline-end;
     display: flex;
     justify-content: space-between;
-    margin-top: 50px;
+    margin-top: 40px;
+    padding-right: 30%;
+    padding-left: 20%;
 
 }
 
 nav ul li {
     margin-left: 20px;
+}
+
+header {
+    padding: 10px 15px;
+    box-shadow: 0 1px 5px rgb(255, 255, 255);
 }
 
 .container{
@@ -62,8 +68,9 @@ button {
     opacity: 1; 
     border: none; 
     border-radius: 18px;
+    float: right;
     margin-right: 100px;
-    margin-top: 40px;
+    margin-top: 30px;
   }
   /* Hover */
   .button:hover {
