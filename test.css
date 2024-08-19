@@ -66,6 +66,71 @@ nav ul {
 nav ul li {
     margin-left: 20px;
 }
+.navbar-toggle {
+    display: block;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 24px;
+    color: #fff;
+    background-color: #2114b3;
+    border: none;
+    outline: none;
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+.navbar-toggle.active + nav ul {
+    display: flex;
+}
+/* Responsive Navbar */
+@media (max-width: 992px) {
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        top: 80px; /* Position below the navbar */
+        left: 0;
+        background-color: #ffffff;
+        width: 100%;
+        padding: 20px;
+        display: none; /* Hidden by default */
+    }
+
+    .navbar-toggle {
+        float: left;
+        display: block;
+        position: relative;
+        cursor: pointer;
+        font-size: 40px;
+        color: #000000;
+        background: none;
+        border: none;
+        outline: none;
+    }
+
+    .navbar-toggle.active + nav ul {
+        display: flex;
+    }
+
+    nav ul li {
+        width: 100%;
+        text-align: left;
+        margin: 10px 0;
+    }
+
+    nav ul li a {
+        padding: 10px 20px;
+        display: block;
+        width: 100%;
+    }
+}
+
+/* Hide the toggle button on larger screens */
+@media (min-width: 993px) {
+    .navbar-toggle {
+        display: none;
+    }
+}
+
 
 header {
     padding: 10px 10px;
@@ -88,6 +153,12 @@ header {
     padding-top: 10px;
 }
 
+@media (max-width: 992px) {
+    .image{
+        width: 15%;
+        height:auto;
+    }
+}
 
 .button {
     width: 130px;
@@ -107,6 +178,12 @@ header {
     float: right;
     margin-right: 100px;
     margin-top: 30px;
+}
+
+@media (max-width: 992px) {
+    .button{
+        margin-right: auto;
+    }
 }
 
 /* Hover */
