@@ -434,7 +434,7 @@ footer .navig ul {
     padding-left: auto;
 }
 
-footer .navig ul li {
+footer .navig ul li a{
     color: white;
 }
 
@@ -983,6 +983,11 @@ h2 {
     color: #555;
 }
 
+.social-media {
+    display: flex;
+    gap: 10px;
+}
+
 /* Button 1 */
 .join-btn {
     width: 102px;
@@ -1043,6 +1048,7 @@ select {
     border: 1 !important;
     border-color: white;
     background-color: transparent;
+    color: white;
     /* needed */
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -1051,8 +1057,8 @@ select {
     background-repeat: no-repeat;
 }
 
-select option{
-    color: black;
+.language-select select option p{
+    color: rgb(255, 255, 255);
     background-color: transparent;
 }
 
